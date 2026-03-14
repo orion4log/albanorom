@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; 
+box-sizing: border-box;
+overflow: hidden;
+}
+body { min-height: 100vh; }
+#particles-js{ 
+height:100vh; 
+position: absolute; 
+z-index: -3;
+background-color: rgb(28, 7, 92);
+}    
+#zapoln{ color: greenyellow;
+padding: 5px 30px 5px 5px;
+font-size: 20px;
+}
+
+.container-fluid{ display: block;
+padding-top: .3rem;
+}
+.container-fluid .main-video{ 
+display: none;
+}
+.container-fluid .main-video video{
+width: 100%;
+}    
+.container-fluid .video-list .vid video{
+margin-right: 3px;
+border: 1px dashed #b90d0d;
+border-radius: 15px;
+width: 82px;
+}
+.container-fluid .video-list .vid:hover{
+color: #eee; cursor: pointer;
+}
+.container-fluid .video-list .vid:active{
+color: #2980b9;
+}   
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 40px;
+}
+img:hover { box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);}
+
+*{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.btn{color: white; margin-bottom: 10px;}
+.btn:hover{color: greenyellow;}
+.hide{display: none;}
+.picture{
+display: inline-block;
+width: 470px;
+height: 140px;
+}
+.ssilk{
+margin-top: -8rem;
+font-size: 12px;
+width: 130px;
+}
+.prokr{
+margin-top: 5px;
+font-size: 11px;
+width: 200px;
+}
+
