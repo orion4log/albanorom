@@ -12,8 +12,7 @@
 </head>
 <body>    	
 <div class="preloader probmain">
-	<p>«Теперь, когда мы научились летать по воздуху как птицы, плавать под водой как рыбы, 
-	нам не хватает только одного: научиться жить на земле как люди»<br> (Д. Б. Шоу)</p>
+	<p>«Жизнь можно начать с чистого листа, но сам почерк изменить гораздо сложнее» Пауло Коэльо</p>
 </div>
 
 <div id="particles-js"></div>
@@ -74,7 +73,9 @@
 <div class="col-10">
 
 <div id="zapoln">
-<h4>Аль Ба́но и Роми́на Па́уэр</h4>
+<h4>Аль Ба́но и Роми́на Па́уэр&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success bg-transparent" onclick="mychfont()">Поменять шрифт</button>
+</h4>
 <p>Аль Ба́но и Роми́на Па́уэр — итальянский дуэт. В 1975—1998 годах был семейным. Завоевал мировую популярность в 
 начале-середине 1980-х годов, благодаря хитам «Sharazan», «Felicità», «Ci sarà», «Libertà» и другим. 
 В 1984 году выиграли главный приз фестиваля в Сан-Ремо с песней «Ci sarà» (рус. «Так будет»).
@@ -217,6 +218,14 @@ function ubrat(){
 	document.getElementById("pokaz").style.display = "none";
 	document.getElementById("zapoln").style.display = "block";
 }
+
+var a;
+function mychfont()
+{
+if(a==1) { document.getElementById("zapoln").style.fontFamily = "none"; return a=0; }
+else{ document.getElementById("zapoln").style.fontFamily = "DRAB"; return a=1; }
+}
+
 </script>
 
 <script src="styles/preloadnew.js"></script>
