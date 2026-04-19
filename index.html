@@ -14,7 +14,6 @@
 <div class="preloader probmain">
 	<p>«Жизнь можно начать с чистого листа, но сам почерк изменить гораздо сложнее» Пауло Коэльо</p>
 </div>
-
 <div id="particles-js"></div>
 
 <div class="container-fluid text-center">
@@ -43,9 +42,13 @@
 	<video src="video/Vistupl Sharazan.mp4" type="video/mp4" autoplay muted loop></video>
 	<p class="title hide">Vistupl Sharazan</p>
 </span>
-<span class="vid" title="Tu soltanto tu (Mi hai fatto innamorare) (ZDF Disco 22.11.1982)">
+<!-- <span class="vid" title="Tu soltanto tu (Mi hai fatto innamorare) (ZDF Disco 22.11.1982)">
 	<video src="video/Tu soltanto tu (Mi hai fatto innamorare) (ZDF Disco 22.11.1982).mp4" type="video/mp4" autoplay muted loop></video>
 	<p class="title hide">Tu soltanto tu (Mi hai fatto innamorare) (ZDF Disco 22.11.1982)</p>
+</span> -->
+<span class="vid" title="Tu_soltanto_tu_2015">
+	<video src="video/Tu_soltanto_tu_2015.mp4" type="video/mp4" autoplay muted loop></video>
+	<p class="title hide">Tu_soltanto_tu_2015</p>
 </span>
 <span class="vid" title="Felicidad 1982 (Remasterizado)">
 	<video src="video/Felicidad 1982 (Remasterizado).mp4" type="video/mp4" autoplay muted loop></video>
@@ -73,8 +76,15 @@
 <div class="col-10">
 
 <div id="zapoln">
-<h4>Аль Ба́но и Роми́на Па́уэр&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="btn btn-success bg-transparent" onclick="mychfont()">Поменять шрифт</button>
+<h4>Аль Ба́но и Роми́на Па́уэр&nbsp;
+<a href="https://itsmyname44.github.io/albanrom2/index.html" target="_blank">
+<button class="btn btn-primary bg-transparent">2</button></a>
+<a href="https://itsmyname44.github.io/albanrom3/index.html" target="_blank">
+<button class="btn btn-primary bg-transparent">3</button></a>
+<a href="https://orion4log.github.io/vidinostr1/index.html" target="_blank">
+<button class="btn btn-primary bg-transparent">Ещё 2 видео</button></a>	
+&nbsp;&nbsp;&nbsp;
+	<button class="btn btn-success bg-transparent" onclick="mychfont()">Поменять шрифт</button>
 </h4>
 <p>Аль Ба́но и Роми́на Па́уэр — итальянский дуэт. В 1975—1998 годах был семейным. Завоевал мировую популярность в 
 начале-середине 1980-х годов, благодаря хитам «Sharazan», «Felicità», «Ci sarà», «Libertà» и другим. 
@@ -144,8 +154,7 @@ value="Просмотр фоток автопрокруткой" onclick="window
 <div class="col-1">
 
 <div class="video-list">
-<a href="https://orion4log.github.io/vidinostr1/index.html" target="_blank">
-<button class="btn btn-primary bg-transparent">Видео</button></a>
+<button class="btn btn-light bg-transparent" onclick="vernut()">Вернуть</button>
 <span class="vid" title="Tu Soltanto Tu En Español">
 	<video src="video/Tu Soltanto Tu En Español.mp4" type="video/mp4" autoplay muted loop></video>
 	<p class="title hide">Tu Soltanto Tu En Español</p>
@@ -195,43 +204,12 @@ value="Просмотр фоток автопрокруткой" onclick="window
 </div>
 </div></div>   
 
-<script>
-	let listVideo = document.querySelectorAll('.video-list .vid');
-	let mainVideo = document.querySelector('.main-video video');
-	let title = document.querySelector('.main-video .title');
-listVideo.forEach(video =>{
-    video.onclick = () =>{ 
-		document.getElementById("zapoln").style.display = "none";
-		document.getElementById("pokaz").style.display = "block";
-		listVideo.forEach(vid => vid.classList.remove('active'));
-		video.classList.add('active');
-		if(video.classList.contains('active')){
-			let src = video.children[0].getAttribute('src');
-			mainVideo.src = src;
-			let text = video.children[1].innerHTML;
-			title.innerHTML	= text;
-		};
-	};
-});
-
-function ubrat(){
-	document.getElementById("pokaz").style.display = "none";
-	document.getElementById("zapoln").style.display = "block";
-}
-
-var a;
-function mychfont()
-{
-if(a==1) { document.getElementById("zapoln").style.fontFamily = "none"; return a=0; }
-else{ document.getElementById("zapoln").style.fontFamily = "DRAB"; return a=1; }
-}
-
-</script>
-
 <script src="styles/preloadnew.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="styles/particles.min.js"></script>
 <script src="styles/app.js"></script>
+<script src="styles/proverka.js"></script>
+<script src="alromina.js"></script>
 </body>
 </html>
 
